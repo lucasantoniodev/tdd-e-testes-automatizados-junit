@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce39ece-5769-4c3d-953b-5e2e747bf458" name="Changes" comment="Teste unitário com junit do método somar">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/BonusService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/services/BonusServiceTest.java" afterDir="false" />
+    <list default="true" id="7ce39ece-5769-4c3d-953b-5e2e747bf458" name="Changes" comment="Teste unitário com junit - Testar regra de negócio do service">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Desempenho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/ReajusteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/services/ReajusteServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Calculadora.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CalculadoraTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -52,21 +51,29 @@
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "D:/Users/Lucas/Desenvolvimento/DBEcommerce/dbcommerce-backend",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.20076923",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.models" />
+      <recent name="org.example.services" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.models" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="org.example.services" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.ReajusteServiceTest">
     <configuration name="BonusServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tddEAutomatizados" />
       <extension name="coverage">
@@ -82,8 +89,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReajusteServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tddEAutomatizados" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.services.ReajusteServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReajusteServiceTest" />
         <item itemvalue="JUnit.BonusServiceTest" />
       </list>
     </recent_temporary>
@@ -96,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674826453216</updated>
-      <workItem from="1674826454641" duration="4426000" />
+      <workItem from="1674826454641" duration="9865000" />
     </task>
     <task id="LOCAL-00001" summary="Teste unitário com junit do método somar">
       <created>1674828049264</created>
@@ -105,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674828049265</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teste unitário com junit - Testar regra de negócio do service">
+      <created>1674831109984</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674831109984</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +143,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Teste unitário com junit do método somar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teste unitário com junit do método somar" />
+    <MESSAGE value="Teste unitário com junit - Testar regra de negócio do service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teste unitário com junit - Testar regra de negócio do service" />
   </component>
 </project>
