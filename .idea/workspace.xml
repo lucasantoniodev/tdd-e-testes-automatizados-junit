@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ce39ece-5769-4c3d-953b-5e2e747bf458" name="Changes" comment="Teste unitário com junit - Testar regra de negócio do service">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Desempenho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/services/ReajusteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/services/ReajusteServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="7ce39ece-5769-4c3d-953b-5e2e747bf458" name="Changes" comment="TDD - Começando pelos testes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/models/Desempenho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/models/Desempenho.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/services/BonusService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/services/BonusService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/services/BonusServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/services/BonusServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,21 +42,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "D:/Users/Lucas/Desenvolvimento/DBEcommerce/dbcommerce-backend",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.20076923",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Lucas/Desenvolvimento/DBEcommerce/dbcommerce-backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.20076923&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.models" />
@@ -73,7 +76,7 @@
       <recent name="org.example.services" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReajusteServiceTest">
+  <component name="RunManager" selected="JUnit.BonusServiceTest">
     <configuration name="BonusServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="tddEAutomatizados" />
       <extension name="coverage">
@@ -85,6 +88,22 @@
       <option name="PACKAGE_NAME" value="org.example.services" />
       <option name="MAIN_CLASS_NAME" value="org.example.services.BonusServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BonusServiceTest.bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tddEAutomatizados" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.services.BonusServiceTest" />
+      <option name="METHOD_NAME" value="bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -106,8 +125,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ReajusteServiceTest" />
         <item itemvalue="JUnit.BonusServiceTest" />
+        <item itemvalue="JUnit.BonusServiceTest.bonusDeveriaSerZeroParaFuncionarioComSalarioMuitoAlto" />
+        <item itemvalue="JUnit.ReajusteServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +139,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674826453216</updated>
-      <workItem from="1674826454641" duration="9865000" />
+      <workItem from="1674826454641" duration="14209000" />
+      <workItem from="1674949356287" duration="1225000" />
+      <workItem from="1675083629961" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Teste unitário com junit do método somar">
       <created>1674828049264</created>
@@ -135,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674831109984</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="TDD - Começando pelos testes">
+      <created>1674843113586</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674843113586</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +173,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Teste unitário com junit do método somar" />
     <MESSAGE value="Teste unitário com junit - Testar regra de negócio do service" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teste unitário com junit - Testar regra de negócio do service" />
+    <MESSAGE value="TDD - Começando pelos testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="TDD - Começando pelos testes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/services/BonusServiceTest.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

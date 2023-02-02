@@ -14,7 +14,7 @@ public class BonusService {
         BigDecimal bonuxMax = BigDecimal.valueOf(1000);
 
         if (valor.compareTo(bonuxMax) > 0) {
-            valor = BigDecimal.ZERO;
+            throw new IllegalArgumentException("Salário muito alto não estão aptos para ganhar bônus.");
         }
         return valor.setScale(2, RoundingMode.HALF_UP);
     }
